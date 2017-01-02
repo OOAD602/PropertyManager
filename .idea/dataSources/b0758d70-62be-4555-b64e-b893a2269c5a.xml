@@ -38,148 +38,152 @@
       <DataType>char(100)|0</DataType>
     </column>
     <column id="21" parent="12" name="backApplyDate">
-      <Position>5</Position>
-      <DataType>date|0</DataType>
-    </column>
-    <column id="22" parent="12" name="backReturnDate">
       <Position>6</Position>
       <DataType>date|0</DataType>
     </column>
-    <column id="23" parent="12" name="backBrokenDate">
+    <column id="22" parent="12" name="backReturnDate">
       <Position>7</Position>
       <DataType>date|0</DataType>
     </column>
-    <index id="24" parent="12" name="FK_backupRecord">
+    <column id="23" parent="12" name="backBrokenDate">
+      <Position>8</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="24" parent="12" name="backPurchaseDate">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <index id="25" parent="12" name="FK_backupRecord">
       <ColNames>employeeId</ColNames>
     </index>
-    <index id="25" parent="12" name="FK_replaceRecord">
+    <index id="26" parent="12" name="FK_replaceRecord">
       <ColNames>equipmentId</ColNames>
     </index>
-    <key id="26" parent="12" name="PRIMARY">
+    <key id="27" parent="12" name="PRIMARY">
       <ColNames>backupId</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="27" parent="12" name="FK_replaceRecord">
+    <foreign-key id="28" parent="12" name="FK_replaceRecord">
       <ColNames>equipmentId</ColNames>
       <RefSchemaName>promanager</RefSchemaName>
       <RefTableName>equipment</RefTableName>
       <RefColNames>equipmentId</RefColNames>
     </foreign-key>
-    <foreign-key id="28" parent="12" name="FK_backupRecord">
+    <foreign-key id="29" parent="12" name="FK_backupRecord">
       <ColNames>employeeId</ColNames>
       <RefSchemaName>promanager</RefSchemaName>
       <RefTableName>employee</RefTableName>
       <RefColNames>employeeId</RefColNames>
     </foreign-key>
-    <column id="29" parent="13" name="employeeId">
+    <column id="30" parent="13" name="employeeId">
       <Position>1</Position>
       <DataType>char(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="30" parent="13" name="password">
+    <column id="31" parent="13" name="password">
       <Position>2</Position>
       <DataType>char(16)|0</DataType>
     </column>
-    <key id="31" parent="13" name="PRIMARY">
+    <key id="32" parent="13" name="PRIMARY">
       <ColNames>employeeId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="32" parent="14" name="equipmentId">
+    <column id="33" parent="14" name="equipmentId">
       <Position>1</Position>
       <DataType>char(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="33" parent="14" name="employeeId">
+    <column id="34" parent="14" name="employeeId">
       <Position>2</Position>
       <DataType>char(20)|0</DataType>
     </column>
-    <column id="34" parent="14" name="purchaseDate">
+    <column id="35" parent="14" name="purchaseDate">
       <Position>3</Position>
       <DataType>date|0</DataType>
     </column>
-    <column id="35" parent="14" name="equipmentName">
+    <column id="36" parent="14" name="equipmentName">
       <Position>4</Position>
       <DataType>char(100)|0</DataType>
     </column>
-    <column id="36" parent="14" name="applyDate">
+    <column id="37" parent="14" name="applyDate">
       <Position>5</Position>
       <DataType>date|0</DataType>
     </column>
-    <column id="37" parent="14" name="returnDate">
+    <column id="38" parent="14" name="returnDate">
       <Position>6</Position>
       <DataType>date|0</DataType>
     </column>
-    <column id="38" parent="14" name="brokenDate">
+    <column id="39" parent="14" name="brokenDate">
       <Position>7</Position>
       <DataType>date|0</DataType>
     </column>
-    <index id="39" parent="14" name="FK_equipmentRecord">
+    <index id="40" parent="14" name="FK_equipmentRecord">
       <ColNames>employeeId</ColNames>
     </index>
-    <key id="40" parent="14" name="PRIMARY">
+    <key id="41" parent="14" name="PRIMARY">
       <ColNames>equipmentId</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="41" parent="14" name="FK_equipmentRecord">
+    <foreign-key id="42" parent="14" name="FK_equipmentRecord">
       <ColNames>employeeId</ColNames>
       <RefSchemaName>promanager</RefSchemaName>
       <RefTableName>employee</RefTableName>
       <RefColNames>employeeId</RefColNames>
     </foreign-key>
-    <column id="42" parent="15" name="softwareId">
+    <column id="43" parent="15" name="softwareId">
       <Position>1</Position>
       <DataType>char(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="43" parent="15" name="softwareName">
+    <column id="44" parent="15" name="softwareName">
       <Position>2</Position>
       <DataType>char(100)|0</DataType>
     </column>
-    <column id="44" parent="15" name="updateDate">
+    <column id="45" parent="15" name="updateDate">
       <Position>3</Position>
       <DataType>date|0</DataType>
     </column>
-    <key id="45" parent="15" name="PRIMARY">
+    <key id="46" parent="15" name="PRIMARY">
       <ColNames>softwareId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="46" parent="16" name="softwareId">
+    <column id="47" parent="16" name="softwareId">
       <Position>1</Position>
       <DataType>char(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="47" parent="16" name="employeeId">
+    <column id="48" parent="16" name="employeeId">
       <Position>2</Position>
       <DataType>char(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="48" parent="16" name="installDate">
+    <column id="49" parent="16" name="installDate">
       <Position>3</Position>
       <DataType>date|0</DataType>
     </column>
-    <column id="49" parent="16" name="uninstallDate">
+    <column id="50" parent="16" name="uninstallDate">
       <Position>4</Position>
       <DataType>date|0</DataType>
     </column>
-    <column id="50" parent="16" name="expireDate">
+    <column id="51" parent="16" name="expireDate">
       <Position>5</Position>
       <DataType>date|0</DataType>
     </column>
-    <index id="51" parent="16" name="FK_softwareRecord2">
+    <index id="52" parent="16" name="FK_softwareRecord2">
       <ColNames>employeeId</ColNames>
     </index>
-    <key id="52" parent="16" name="PRIMARY">
+    <key id="53" parent="16" name="PRIMARY">
       <ColNames>softwareId
 employeeId</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="53" parent="16" name="FK_softwareRecord">
+    <foreign-key id="54" parent="16" name="FK_softwareRecord">
       <ColNames>softwareId</ColNames>
       <RefSchemaName>promanager</RefSchemaName>
       <RefTableName>software</RefTableName>
       <RefColNames>softwareId</RefColNames>
     </foreign-key>
-    <foreign-key id="54" parent="16" name="FK_softwareRecord2">
+    <foreign-key id="55" parent="16" name="FK_softwareRecord2">
       <ColNames>employeeId</ColNames>
       <RefSchemaName>promanager</RefSchemaName>
       <RefTableName>employee</RefTableName>
